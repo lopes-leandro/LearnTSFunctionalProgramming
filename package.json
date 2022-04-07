@@ -3,7 +3,7 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "set:server": "cd packages/functional"
+    "set:server": "cd packages/functional && npm install && npm start"
   },
   "name": "root",
   "private":"true",
