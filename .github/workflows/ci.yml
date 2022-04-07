@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
-          cache-dependency-path: packages/functional/package-lock.json
+          cache-dependency-path: '**/packages/functional/package-lock.json'
       - run: npm install
-      - run: npm start
+      - run: npm run 'postinstall:server'
