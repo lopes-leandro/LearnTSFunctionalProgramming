@@ -1,12 +1,10 @@
 name: ci-nodejs-workflow
-
 on:
   pull_request:
     branches:
       - develop
-
 jobs:
-  check-application:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
