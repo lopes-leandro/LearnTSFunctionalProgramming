@@ -1,5 +1,5 @@
 // Sample 1:
-function greetNamed(name: string): string {
+export function greetNamed(name: string): string {
   return `Hi! ${name}`;
 }
 
