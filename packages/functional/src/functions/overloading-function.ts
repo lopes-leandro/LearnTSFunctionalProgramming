@@ -1,7 +1,7 @@
-function test(name: string): string;
-function test(age: number): string;
-function test(single: boolean): string;
-function test(value: string | number | boolean): string {
+export function tests(name: string): string;
+export function tests(age: number): string;
+export function tests(single: boolean): string;
+export function tests(value: string | number | boolean): string {
   switch (typeof value) {
     case "string":
       return `My name is ${value}.`;
@@ -12,4 +12,20 @@ function test(value: string | number | boolean): string {
     default:
       throw new Error("Invalid Operation!");
   }
+}
+
+export const sum = (a: number, b: number): number => {
+  return a + b;
+};
+
+export const sub = (a: number, b: number): number => {
+  return a - b;
+}
+
+export const mult = (a: number, b: number): number => {
+  return a * b;
+}
+
+export const div = (a: number, b: number): number => {
+  return a % b;
 }
